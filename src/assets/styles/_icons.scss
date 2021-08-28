@@ -1,0 +1,59 @@
+$cozy-nest-icon-font: "cozy-nest-icon";
+
+@font-face {
+    font-family: $cozy-nest-icon-font;
+    src: url("../fonts/cozy-nest-icon.ttf?3b77d313c1fa664a11a4e26028752a2b") format("truetype"),
+url("../fonts/cozy-nest-icon.woff?3b77d313c1fa664a11a4e26028752a2b") format("woff"),
+url("../fonts/cozy-nest-icon.woff2?3b77d313c1fa664a11a4e26028752a2b") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: cozy-nest-icon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$cozy-nest-icon-map: (
+    "bed": "\f101",
+    "checkbox-checked": "\f102",
+    "checkbox-unchecked": "\f103",
+    "heart": "\f104",
+    "location-2": "\f105",
+    "location": "\f106",
+    "plus": "\f107",
+    "room-area": "\f108",
+    "toilet": "\f109",
+);
+
+.icon-bed:before {
+    content: map-get($cozy-nest-icon-map, "bed");
+}
+.icon-checkbox-checked:before {
+    content: map-get($cozy-nest-icon-map, "checkbox-checked");
+}
+.icon-checkbox-unchecked:before {
+    content: map-get($cozy-nest-icon-map, "checkbox-unchecked");
+}
+.icon-heart:before {
+    content: map-get($cozy-nest-icon-map, "heart");
+}
+.icon-location-2:before {
+    content: map-get($cozy-nest-icon-map, "location-2");
+}
+.icon-location:before {
+    content: map-get($cozy-nest-icon-map, "location");
+}
+.icon-plus:before {
+    content: map-get($cozy-nest-icon-map, "plus");
+}
+.icon-room-area:before {
+    content: map-get($cozy-nest-icon-map, "room-area");
+}
+.icon-toilet:before {
+    content: map-get($cozy-nest-icon-map, "toilet");
+}
